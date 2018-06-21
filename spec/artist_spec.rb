@@ -1,5 +1,4 @@
 require "spec_helper"
-require 'pry'
 
 describe "Artist" do
 
@@ -34,7 +33,6 @@ describe "Artist" do
     describe "#add_song_by_name" do
       it "takes in an argument of a song name, creates a new song with it and associates the song and artist" do
         adele.add_song_by_name("Rolling in the Deep")
-        binding.pry 
         expect(adele.songs.last.name).to eq("Rolling in the Deep")
         expect(adele.songs.last.artist).to eq(adele)
       end
