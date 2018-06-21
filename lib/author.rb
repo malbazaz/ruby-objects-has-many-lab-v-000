@@ -10,10 +10,10 @@ class Author
   end 
   
   def author_name
-    if self.name == nil 
+    if @name == nil 
       nil 
     else 
-      self.name 
+      @name 
     end 
   end 
   
