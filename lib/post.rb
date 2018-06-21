@@ -7,7 +7,7 @@ class Post
   @@all = []
   end 
   
-  def author_name(name)
+  def author_name
       if self.name == nil 
         nil 
       else 
