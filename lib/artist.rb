@@ -11,6 +11,14 @@ attr_accessor :name, :songs, :song_name, :artist, :artist_name
     @@all << self 
   end 
   
+  def artist_name
+    if @name == nil 
+      nil 
+    else 
+      @name 
+    end 
+  end 
+  
   def songs
     @@songs 
   end 
