@@ -12,6 +12,10 @@ class Author
   def author_name
     self.name
   end 
+  
+  def posts
+    
+  end 
 
   def add_post(post)
     @post = post 
