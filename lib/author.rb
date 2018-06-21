@@ -1,6 +1,6 @@
 class Author
   
-  attr_accessor :name, :author_name, :author, :posts 
+  attr_accessor :name, :author_name, :author, :posts
   
 @@all = []
 
@@ -10,7 +10,11 @@ class Author
   end 
   
   def author_name
-    self.name
+    if self.name == nil 
+      nil 
+    else 
+      self.name 
+    end 
   end 
   
   def posts
